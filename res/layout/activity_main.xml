@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:onClick="copyuser"
+        android:id="@+id/bt_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:text="复制账号" />
+
+    <Button
+        android:onClick="copypassword"
+        android:id="@+id/bt_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bt_user"
+        android:layout_marginTop="46dp"
+        android:text="复制密码" />
+
+    <Button
+        android:onClick="get"
+        android:id="@+id/get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bt_password"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="97dp"
+        android:text="获取账号" />
+
+    <Button
+        android:onClick="history"
+        android:id="@+id/histroy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/get"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="52dp"
+        android:text="历史记录" />
+
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bt_user"
+        android:layout_toRightOf="@+id/bt_user"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_password"
+        android:layout_alignBottom="@+id/bt_password"
+        android:layout_toRightOf="@+id/bt_password"
+        android:ems="10" />
+
+</RelativeLayout>
